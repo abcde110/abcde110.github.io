@@ -1,0 +1,99 @@
+body{
+    background: url("../IMG/12.jpg") no-repeat center top/100%;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.header{
+    width: 1198px;
+    height: 73px;
+    line-height: 73px;
+    color: #f8b770;
+    margin: 0 auto;
+    margin-top: 45px;
+    background: url("../IMG/bg_nav.jpg") no-repeat 0 0/100% 100%;
+    border-left: none;
+    border-right: none;
+    position: relative;
+}
+.header nav a{
+    float: left;
+    width: 161px;
+    box-sizing: border-box;
+    height:73px;
+    text-align: center;
+    border:1px solid #3f2a22;
+    border-top: none;
+    border-bottom: none;
+
+}
+.header nav a:nth-child(3){
+    margin-right: 232px;
+}
+.header .logo{
+    position: absolute;
+    width: 238px;
+    height: 118px;
+    background: url("../IMG/logo.png") no-repeat;
+    left: 0;
+    right: 0;
+    top: -35px;
+    margin: auto;
+
+}
+.header .logo h1{
+    display: none;
+}
+.menu{
+    text-align: center;
+    margin-top: 373px;
+
+}
+.menu a{
+    display: inline-block;
+    width: 323px;
+    height: 105px;
+    background: url(../IMG/btns.png) no-repeat;
+}
+.menu a span{
+    display: none;
+}
+.menu a.download{
+     background-position: -323px 0;
+}
+.adv{
+    width: 1203px;
+    margin: 76px auto;
+}
+.adv .item{
+    float: left;
+    width: 290px;
+    height: 200px;
+    margin-right: 13px;
+    outline:1px solid #3f3a22;
+}
+.adv .item:last-child{
+    margin-right:0;
+}
+.adv .item .title{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #211520;
+    color: #f8b700;
+    border-bottom: 1px solid #3f2a22;
+    box-sizing: border-box;
+}
+.adv .item .img{
+    height: 150px;
+}
+.adv .item .img img{
+    width: 290px;
+    height: 150px;
+}
+mosou.iframe
+{back
+
+}
