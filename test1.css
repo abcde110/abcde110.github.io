@@ -1,0 +1,109 @@
+body{
+    background: url("../IMG/12.jpg") no-repeat center top/100%;
+}
+.header{
+    width: 1198px;
+    height: 73px;
+    line-height: 73px;
+    color: #f8b770;
+    margin: 0 auto;
+    margin-top: 45px;
+    background: url("../IMG/bg_nav.jpg") no-repeat 0 0/100% 100%;
+    border-left: none;
+    border-right: none;
+    position: relative;
+}
+.header nav a{
+    float: left;
+    width: 161px;
+    box-sizing: border-box;
+    height:73px;
+    text-align: center;
+    border:1px solid #3f2a22;
+    border-top: none;
+    border-bottom: none;
+}
+.header nav .menu2{
+    position: relative;
+}
+header nav a:hover{
+    background: url() no-repeat #3e2a22;
+}
+.header nav a ul{
+    background: #190e0a;
+    /* border: 1px solid#e1e2e3; */
+    position: absolute;
+    left:-2px;
+    top: 73px;
+    right: -2px;
+    max-height:700px;
+    overflow:hidden; 
+    display: none;
+    line-height: 1em;
+}
+.header nav a:hover  ul{
+
+    display: block;
+    padding: 2px 0 2px 0;
+}
+.header nav .hid:visited{
+    background: url() no-repeat grey;
+}
+.header nav .hid .zhao{
+    position: fixed;
+    background: rgba(0,0,0,.5);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+}
+.header nav .hid:active .zhao{
+    display: block;
+}
+.header nav .hid .zhao .container{
+    margin: auto;
+    height: 800px;
+    width: 500px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    background:url("../IMG/bg_nav.jpg") repeat 0 0/contain;
+    z-index: 999;
+}
+.header nav a:nth-child(3){
+    margin-right: 232px;
+}
+.header .logo{
+    position: absolute;
+    width: 238px;
+    height: 118px;
+    background: url("../IMG/logo.png") no-repeat;
+    left: 0;
+    right: 0;
+    top: -35px;
+    margin: auto;
+    z-index: 90;
+}
+.header .logo h1{
+    display: none;
+}
+.menu{
+    text-align: center;
+    margin-top: 473px;
+
+}
+.menu a{
+    display: inline-block;
+    width: 323px;
+    height: 105px;
+    background: url(../IMG/btns.png) no-repeat;
+}
+.menu a span{
+    display: none;
+}
+.menu a.download{
+     background-position: -323px 0;
+}
