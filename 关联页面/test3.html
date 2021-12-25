@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>页面仅供学习使用</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        /* 采用图片平铺设置背景，避免由于背景图片过大加载慢 */
+        body{
+            /* background: url("../../CSS补充/17.更多的样式/img/5.webp") no-repeat center top/100%; */
+              /* 速写属性background中先写位置再写尺寸 */
+            background: url("./img/bodybackground.webp") repeat center top/6%;
+            cursor:no-drop ;
+        }
+        header{
+            /* background: url("./0143f156415d566ac7259e0f07ae06.jpg@1280w_1l_2o_100sh.jpg") repeat  center top; */
+        }
+        iframe{
+            width: 100%;
+            height: 500px;
+            border-radius: 5%;
+            border: 2px solid #fff;
+            background-color: #00bcbc;
+     
+        }
+    </style>
+    <link rel="stylesheet" href="./css/beautiful button.css">
+    <!-- <link rel="stylesheet" href="../../CSS补充/18.背景图练习/CSS/reset.css"> -->
+</head>
+<body>
+    <script>
+        alert("老师好");
+    </script>
+    <!-- <script>
+    var items = document.getElementsByTagName("a");
+    for ( var i = 0 ,len = items.length;i < len;i ++ )
+    {
+    items.getAttributeNode( "target" ).value = "myframe" ;
+    }
+    </script> -->
+    <!-- <script>
+        $("a").attr("target","myframe");
+    </script> -->
+    <!-- <script>
+        // 另一种方法是使用jQuery建议用这种，理由兼容性高方便
+    // 调用jQuery插件
+        $( " a " ).attr( " target " , " _parent" );
+    </script> -->
+    <!-- <script>
+        var win = document.getElementById("myframe").contentWindow;
+        var alist = win.document.getElementsByTagName("a");
+        for(var i = 0;i<alist.length;i++){    (function(index){        alist[index].onclick=function(e){            this.target="_self";        }    })(i)}
+    </script> -->
+<!--   
+    <script>
+    $(function () {
+        setTimeout(function () {
+            iframe.src = "https://id2021.github.io";
+        },5000);
+    });
+    document.body.onbeforeunload = function (event) {
+        var rel = "asdfawfewf";
+        if (!window.event) {
+         event.returnValue = rel;
+        } else {
+            window.event.returnValue = rel;
+        }
+    };
+    </script> -->
+    <script>
+        document.body.onbeforeunload = function (event) {
+                var rel = "asdfawfewf";
+                 if (!window.event) {
+                    event.returnValue = rel;
+                 } else {
+                     window.event.returnValue = rel;
+                 }
+             };    
+    </script>
+    <script language="JavaScript">
+            if (window != top)
+                top.location.href = location.href;
+        </script>
+        
+        <!-- header>div[class="stu"]>div[class="stu1$"]*11+div[class="stu2$"]*11+div[class="stu3$"]*11+div[class="sty4$"]*11>button>span -->
+        <!-- header>div[class="stu"]>(div[class="stu1$"]*11>button[class="bt1$"]>span)+(div[class="stu2$"]*11>button[class="bt2$"]>span)+(div[class="stu3$"]*11>button[class="bt3$"]>span)+(div[class="sty4$"]*11>button[class="bt4$"]>span) -->
+        <!-- header>div[class="stu"]>(div[class="line1"]>(div[class="stu1$"]*11>button[class="bt1$"]>span))+(div[class="line2"]>(div[class="stu2$"]*11>button[class="bt2$"]>span))+(div[class="line3"]>(div[class="stu3$"]*11>button[class="bt3$"]>span))+(div[class="line4"]>(div[class="sty4$"]*11>button[class="bt4$"]>span))  -->
+        <header>
+            <div class="stu">
+                <div class="line1">
+                    <!-- 通过对div的tabinindex等属性的设定，使得原本不具有聚焦样式的div元素能够利用css示现理想的focus样式，可惜的是div元素选中后由于马上就关联到了iframe页面里，丢失了聚焦，虽然按tab键能看到聚焦效果，但是该部分的聚焦已经不具备什么修饰元素或者标识的意义了-->
+                    <div class="stu11"tabindex="0"hidefocus="true"outline=0><button class="bt11"></button><span><a href="https://wenshiqing1.github.io" target="myframe">文诗晴</a></span></div>
+                    <div class="stu12"tabindex="0"hidefocus="true"outline=0><button class="bt12"></button><span><a href="https://Linxiaozhuang.github.io" target="myframe">林晓庄</a></span></div>
+                    <div class="stu13"tabindex="0"hidefocus="true"outline=0><button class="bt13"></button><span><a href="https://tongxinkeqi.github.io"  target="myframe">张赞</a></span></div>
+                    <div class="stu14"tabindex="0"hidefocus="true"outline=0><button class="bt14"></button><span><a href="https://jiangyimeng1.github.io" target="myframe">李鹏成</a></span></div>
+                    <div class="stu15"tabindex="0"hidefocus="true"outline=0><button class="bt15"></button><span><a href="https://blog.nowscott.top" target="myframe">牛施桥</a></span></div>
+                    <div class="stu16"tabindex="0"hidefocus="true"outline=0><button class="bt16"></button><span><a href="https://Adjudicater.github.io" target="myframe">石开心</a></span></div>
+                    <div class="stu17"tabindex="0"hidefocus="true"outline=0><button class="bt17"></button><span><a href="https://wangshuai188.github.io" target="myframe">高缜</a></span></div>
+                    <div class="stu18"tabindex="0"hidefocus="true"outline=0><button class="bt18"></button><span><a href="https://lizonggentil.github.io" target="myframe">孙灵超</a></span></div>
+                    <div class="stu19"tabindex="0"hidefocus="true"outline=0><button class="bt19"></button><span><a href="https://02DarLin.github.io" target="myframe">徐煜</a></span></div>
+                    <div class="stu110"tabindex="0"hidefocus="true"outline=0><button class="bt110"></button><span><a href="https://yza21.github.io" target="myframe">姚梓昂</a></span></div>
+                    <div class="stu111"tabindex="0"hidefocus="true"outline=0><button class="bt111"></button><span><a href="https://id2021.github.io" target="myframe">黄凯强</a></span></div>
+                </div>
+                <div class="line2">
+                    <div class="stu21"tabindex="0"hidefocus="true"outline=0><button class="bt21"></button><span><a href="https://xinjunwei.github.io" target="myframe">辛钧炜</a> </span></div>
+                    <div class="stu22"tabindex="0"hidefocus="true"outline=0><button class="bt22"></button><span><a href="https://gtfgithub.github.io" target="myframe">龚霆峰</a></span></div>
+                    <div class="stu23"tabindex="0"hidefocus="true"outline=0><button class="bt23"></button><span><a href="https://qingliuyixu.github.io" target="myframe">刘功发</a></span></div>
+                    <div class="stu24"tabindex="0"hidefocus="true"outline=0><button class="bt24"></button><span><a href="https://baiweiren.github.io" target="myframe">白为仁</a></span></div>
+                    <div class="stu25"tabindex="0"hidefocus="true"outline=0><button class="bt25"></button><span><a href="https://chendefan.github.io" target="myframe">陈德凡</a></span></div>
+                    <div class="stu26"tabindex="0"hidefocus="true"outline=0><button class="bt26"></button><span><a href="https://Fklxy.Github.io" target="myframe">胡雨澄</a></span></div>
+                    <div class="stu27"tabindex="0"hidefocus="true"outline=0><button class="bt27"></button><span><a href="https://Hyh200.github.io" target="myframe">韩宇浩</a></span></div>
+                    <div class="stu28"tabindex="0"hidefocus="true"outline=0><button class="bt28"></button><span><a href="https://abcde110.github.io" target="myframe">诸云翔</a></span></div>
+                    <div class="stu29"tabindex="0"hidefocus="true"outline=0><button class="bt29"></button><span><a href="https://dlwlr.github.io" target="myframe">朱彬</a></span></div>
+                    <div class="stu210"tabindex="0"hidefocus="true"outline=0><button class="bt210"></button><span><a href="https://fengkuangdele.github.io" target="myframe">俞佳乐</a></span></div>
+                    <div class="stu211"tabindex="0"hidefocus="true"outline=0><button class="bt211"></button><span><a href="https://dingchaolong.github.io" target="myframe">丁超龙</a></span></div>
+                </div>
+                <div class="line3">
+                    <div class="stu31"tabindex="0"hidefocus="true"outline=0><button class="bt31"></button><span><a href="https://yangyifan23.github.io" target="myframe">杨一凡</a> </span></div>
+                    <div class="stu32"tabindex="0"hidefocus="true"outline=0><button class="bt32"></button><span><a href="https://liaoyuxuan01.github.io" target="myframe">廖宇轩</a></span></div>
+                    <div class="stu33"tabindex="0"hidefocus="true"outline=0><button class="bt33"></button><span><a href="https://daixiaoyu6.github.io" target="myframe">代孝宇</a></span></div>
+                    <div class="stu34"tabindex="0"hidefocus="true"outline=0><button class="bt34"></button><span><a href="https://tianshidexintiao.github.io" target="myframe">朱诗龙</a></span></div>
+                    <div class="stu35"tabindex="0"hidefocus="true"outline=0><button class="bt35"></button><span><a href="https://zhijun001224.github.io" target="myframe">黄智均</a></span></div>
+                    <div class="stu36"tabindex="0"hidefocus="true"outline=0><button class="bt36"></button><span><a href="https://zhouzhengjun123.github.io" target="myframe">周政军</a></span></div>
+                    <div class="stu37"tabindex="0"hidefocus="true"outline=0><button class="bt37"></button><span><a href="https://ajiang686.github.io" target="myframe">江杨</a></span></div>
+                    <div class="stu38"tabindex="0"hidefocus="true"outline=0><button class="bt38"></button><span><a href="https://WG0822.github.io" target="myframe">郭嘉欣</a></span></div>
+                    <div class="stu39"tabindex="0"hidefocus="true"outline=0><button class="bt39"></button><span><a href="https://wangjia369.github.io" target="myframe">王嘉</a></span></div>
+                    <div class="stu310"tabindex="0"hidefocus="true"outline=0><button class="bt310"></button><span><a href="https://gilgamesh-m.GitHub.io" target="myframe">张哲</a></span></div>
+                    <div class="stu311"tabindex="0"hidefocus="true"outline=0><button class="bt311"></button><span><a href="https://pyrrhao.github.io" target="myframe">王梦婷</a></span></div>
+                </div>
+                <div class="line4">
+                    <div class="sty41"tabindex="0"hidefocus="true"outline=0><button class="bt41"></button><span><a href="https://Hujingjin. github. io" target="myframe">胡景金</a></span></div>
+                    <div class="sty42"tabindex="0"hidefocus="true"outline=0><button class="bt42"></button><span><a href="https://zhouying25.github.io" target="myframe">周颖</a></span></div>
+                    <div class="sty43"tabindex="0"hidefocus="true"outline=0><button class="bt43"></button><span><a href="https://Kingenn.github.io" target="myframe">王鹏</a></span></div>
+                    <div class="sty44"tabindex="0"hidefocus="true"outline=0><button class="bt44"></button><span><a href="https://FandyFung.github.io" target="myframe">冯筱玲</a></span></div>
+                    <div class="sty45"tabindex="0"hidefocus="true"outline=0><button class="bt45"></button><span><a href="https://l-hamilton.github.io" target="myframe">邬田昊</a></span></div>
+                    <div class="sty46"tabindex="0"hidefocus="true"outline=0><button class="bt46"></button><span><a href="https://shuaijiahua.github.io" target="myframe">帅佳华</a></span></div>
+                    <div class="sty47"tabindex="0"hidefocus="true"outline=0><button class="bt47"></button><span><a href="https://https://sweetmax7.github.io/" target="myframe">文佳怡</a></span></div>
+                    <div class="sty48"tabindex="0"hidefocus="true"outline=0><button class="bt48"></button><span><a href="https://yaoyaoya0608.github.io" target="myframe">王昕瑶</a></span></div>
+                    <div class="sty49"tabindex="0"hidefocus="true"outline=0><button class="bt49"></button><span><a href="https://luwenlong0.github.io" target="myframe">陆文龙</a></span></div>
+                    <div class="sty410"tabindex="0"hidefocus="true"outline=0><button class="bt410"></button><span><a href="https://galaxyZz-sodu.github.io" target="myframe">谭昭彬</a></span></div>
+                    <div class="sty411"tabindex="0"hidefocus="true"outline=0><button class="bt411"></button><span></span></div>
+                </div>
+            </div>
+        </header>
+        <!-- <header>
+            <div class="stu">
+                <div class="stu11"tabindex="0"hidefocus="true"outline=0><button class="bt11"></button><span></span></div>
+                <div class="stu12"tabindex="0"hidefocus="true"outline=0><button class="bt12"></button><span></span></div>
+                <div class="stu13"tabindex="0"hidefocus="true"outline=0><button class="bt13"></button><span></span></div>
+                <div class="stu14"tabindex="0"hidefocus="true"outline=0><button class="bt14"></button><span></span></div>
+                <div class="stu15"tabindex="0"hidefocus="true"outline=0><button class="bt15"></button><span></span></div>
+                <div class="stu16"tabindex="0"hidefocus="true"outline=0><button class="bt16"></button><span></span></div>
+                <div class="stu17"tabindex="0"hidefocus="true"outline=0><button class="bt17"></button><span></span></div>
+                <div class="stu18"tabindex="0"hidefocus="true"outline=0><button class="bt18"></button><span></span></div>
+                <div class="stu19"tabindex="0"hidefocus="true"outline=0><button class="bt19"></button><span></span></div>
+                <div class="stu110"tabindex="0"hidefocus="true"outline=0><button class="bt110"></button><span></span></div>
+                <div class="stu111"tabindex="0"hidefocus="true"outline=0><button class="bt111"></button><span></span></div>
+                <div class="stu21"tabindex="0"hidefocus="true"outline=0><button class="bt21"></button><span></span></div>
+                <div class="stu22"tabindex="0"hidefocus="true"outline=0><button class="bt22"></button><span></span></div>
+                <div class="stu23"tabindex="0"hidefocus="true"outline=0><button class="bt23"></button><span></span></div>
+                <div class="stu24"tabindex="0"hidefocus="true"outline=0><button class="bt24"></button><span></span></div>
+                <div class="stu25"tabindex="0"hidefocus="true"outline=0><button class="bt25"></button><span></span></div>
+                <div class="stu26"tabindex="0"hidefocus="true"outline=0><button class="bt26"></button><span></span></div>
+                <div class="stu27"tabindex="0"hidefocus="true"outline=0><button class="bt27"></button><span></span></div>
+                <div class="stu28"tabindex="0"hidefocus="true"outline=0><button class="bt28"></button><span></span></div>
+                <div class="stu29"tabindex="0"hidefocus="true"outline=0><button class="bt29"></button><span></span></div>
+                <div class="stu210"tabindex="0"hidefocus="true"outline=0><button class="bt210"></button><span></span></div>
+                <div class="stu211"tabindex="0"hidefocus="true"outline=0><button class="bt211"></button><span></span></div>
+                <div class="stu31"tabindex="0"hidefocus="true"outline=0><button class="bt31"></button><span></span></div>
+                <div class="stu32"tabindex="0"hidefocus="true"outline=0><button class="bt32"></button><span></span></div>
+                <div class="stu33"tabindex="0"hidefocus="true"outline=0><button class="bt33"></button><span></span></div>
+                <div class="stu34"tabindex="0"hidefocus="true"outline=0><button class="bt34"></button><span></span></div>
+                <div class="stu35"tabindex="0"hidefocus="true"outline=0><button class="bt35"></button><span></span></div>
+                <div class="stu36"tabindex="0"hidefocus="true"outline=0><button class="bt36"></button><span></span></div>
+                <div class="stu37"tabindex="0"hidefocus="true"outline=0><button class="bt37"></button><span></span></div>
+                <div class="stu38"tabindex="0"hidefocus="true"outline=0><button class="bt38"></button><span></span></div>
+                <div class="stu39"tabindex="0"hidefocus="true"outline=0><button class="bt39"></button><span></span></div>
+                <div class="stu310"tabindex="0"hidefocus="true"outline=0><button class="bt310"></button><span></span></div>
+                <div class="stu311"tabindex="0"hidefocus="true"outline=0><button class="bt311"></button><span></span></div>
+                <div class="sty41"tabindex="0"hidefocus="true"outline=0><button class="bt41"></button><span></span></div>
+                <div class="sty42"tabindex="0"hidefocus="true"outline=0><button class="bt42"></button><span></span></div>
+                <div class="sty43"tabindex="0"hidefocus="true"outline=0><button class="bt43"></button><span></span></div>
+                <div class="sty44"tabindex="0"hidefocus="true"outline=0><button class="bt44"></button><span></span></div>
+                <div class="sty45"tabindex="0"hidefocus="true"outline=0><button class="bt45"></button><span></span></div>
+                <div class="sty46"tabindex="0"hidefocus="true"outline=0><button class="bt46"></button><span></span></div>
+                <div class="sty47"tabindex="0"hidefocus="true"outline=0><button class="bt47"></button><span></span></div>
+                <div class="sty48"tabindex="0"hidefocus="true"outline=0><button class="bt48"></button><span></span></div>
+                <div class="sty49"tabindex="0"hidefocus="true"outline=0><button class="bt49"></button><span></span></div>
+                <div class="sty410"tabindex="0"hidefocus="true"outline=0><button class="bt410"></button><span></span></div>
+                <div class="sty411"tabindex="0"hidefocus="true"outline=0><button class="bt411"></button><span></span></div>
+            </div>
+        </header>          
+    -->
+
+
+
+
+
+
+
+
+
+    <!-- <a href="https://wenshiqing1.github.io" target="myframe">文诗晴</a>
+    <a href="https://Linxiaozhuang.github.io" target="myframe">林晓庄</a>
+    <a href="https://tongxinkeqi.github.io"  target="myframe">张赞</a>
+    <a href="https://jiangyimeng1.github.io" target="myframe">李鹏成</a>
+    <a href="https://blog.nowscott.top" target="myframe">牛施桥</a>
+    <a href="https://Adjudicater.github.io" target="myframe">石开心</a>
+    <a href="https://wangshuai188.github.io" target="myframe">高缜</a>
+    <a href="https://lizonggentil.github.io" target="myframe">孙灵超</a>
+    <a href="https://02DarLin.github.io" target="myframe">徐煜</a>
+    <a href="https://yza21.github.io" target="myframe">姚梓昂</a>
+    <a href="https://id2021.github.io" target="myframe">黄凯强</a>
+    <a href="https://xinjunwei.github.io" target="myframe">辛钧炜</a>
+    <a href="https://gtfgithub.github.io" target="myframe">龚霆峰</a>
+    <a href="https://qingliuyixu.github.io" target="myframe">刘功发</a>
+    <a href="https://baiweiren.github.io" target="myframe">白为仁</a>
+    <a href="https://chendefan.github.io" target="myframe">陈德凡</a>
+    <a href="https://Fklxy.Github.io" target="myframe">胡雨澄</a>
+    <a href="https://Hyh200.github.io" target="myframe">韩宇浩</a>
+    <a href="https://abcde110.github.io" target="myframe">诸云翔</a>
+    <a href="https://dlwlr.github.io" target="myframe">朱彬</a>
+    <a href="https://fengkuangdele.github.io" target="myframe">俞佳乐</a>
+    <a href="https://dingchaolong.github.io" target="myframe">丁超龙</a>
+    <a href="https://yangyifan23.github.io" target="myframe">杨一凡</a>
+    <a href="https://liaoyuxuan01.github.io" target="myframe">廖宇轩</a>
+    <a href="https://daixiaoyu6.github.io" target="myframe">代孝宇</a>
+    <a href="https://tianshidexintiao.github.io" target="myframe">朱诗龙</a>
+    <a href="https://zhijun001224.github.io" target="myframe">黄智均</a>
+    <a href="https://zhouzhengjun123.github.io" target="myframe">周政军</a>
+    <a href="https://ajiang686.github.io" target="myframe">江杨</a>
+    <a href="https://WG0822.github.io" target="myframe">郭嘉欣</a>
+    <a href="https://wangjia369.github.io" target="myframe">王嘉</a>
+    <a href="https://gilgamesh-m.GitHub.io" target="myframe">张哲</a>
+    <a href="https://pyrrhao.github.io" target="myframe">王梦婷</a>
+    <a href="https://Hujingjin. github. io" target="myframe">胡景金</a>
+    <a href="https://zhouying25.github.io" target="myframe">周颖</a>
+    <a href="https://Kingenn.github.io" target="myframe">王鹏</a>
+    <a href="https://FandyFung.github.io" target="myframe">冯筱玲</a>
+    <a href="https://l-hamilton.github.io" target="myframe">邬田昊</a>
+    <a href="https://shuaijiahua.github.io" target="myframe">帅佳华</a>
+    <a href="https://https://sweetmax7.github.io/" target="myframe">文佳怡</a>
+    <a href="https://yaoyaoya0608.github.io" target="myframe">王昕瑶</a>
+    <a href="https://luwenlong0.github.io" target="myframe">陆文龙</a>
+    <a href="https://galaxyZz-sodu.github.io" target="myframe">谭昭彬</a> -->
+
+    <!-- <a href="https://www.baidu.com"target="myframe">百度</a>
+    <a href="https://douyu.com" target="myframe">斗鱼</a>
+    <a href="https://www.taobao.com"target="myframe">淘宝</a>
+    <a href="https://dz.blizzard.cn/" target="myframe">魔兽</a> -->
+    <!-- 本来想用sandbox中的属性值禁用掉页面中的html5和js，从而禁用掉关联的页面中的target属性,但是很显然，虽然能达到目的，但是也十分影响页面观感，所以删除了相关的属性值 -->
+    <iframe name="myframe" src="https://ninekwll.github.io/" frameborder="0" id = "myframe" sandbox="allow-scripts allow-same-origin allow-popups allow-forms"></iframe>
+    
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+/* 设置按钮区域 */
+header{
+    width:100%;
+    height: 35%;
+    max-height: 40%;
+} 
+header .stu{
+    width:100%;
+    height:100%;
+    padding: 0 auto;
+    text-align: center;
+    padding: 8px 0;
+}
+header .stu .line1{
+    display: inline-block;
+    height: 25%;
+    margin: 2px auto;
+}
+header .stu .line2{
+    display:block;
+    height: 25%;
+    margin:2px auto;
+}
+header .stu .line3{
+    display: inline-block;
+    height: 25%;
+    margin:2px auto;
+}
+header .stu .line4{
+    display: inline-block;
+    height: 25%;
+    margin:2px auto;
+}
+header div div div{
+    height:100%;
+    width: 100px;
+    display:inline-block;
+    border: 1px solid #b3a3;
+    background-color: #fff;
+    border-radius: 5%;
+    text-align: center;
+    /* margin: 5px 3px; */
+    
+}
+/* 本来想要先隐藏button，再借用button的click属性，达到某些js和css效果，后来没写js，button对于页面来说是多余的 */
+header div div div button{
+    display: none;
+    width: 100%;
+}
+header div div div span{
+    border:1px solid #e1e2e3;
+    border-radius: 10%;
+    /* background-color:#d7b7; */
+    background-color: #000;
+    width:100%;
+    height: auto; 
+    display: inline-block;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 20px;
+    
+}
+header div div div button:focus+span{
+    font-size: medium;
+    color: lightblue;
+    outline: #b3a3;
+}
+header div div div span:hover{
+    color: maroon;
+    font-size: 16px;
+    text-align: center;
+}
+/* 设置聚焦元素 */
+header div div div:focus{
+    background-color:#fff;
+    /* border: 2px solid #00a1d6; */
+    outline: 1.88px solid #00a1d1;
+    border-radius: 5%;
+
+}
+header div div div button:checked+span{
+    background-color:#008c8c;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+iframe:focus{
+    border:1px solid #008c8c;
+}
