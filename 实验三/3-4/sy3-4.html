@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0px;
+            padding:0px;
+        }
+        table{
+            width:100%;
+            margin:50px auto;
+            border:1px solid black;
+            border-collapse: collapse;
+        }
+        th{
+            width:200px;
+            line-height:30px;
+            border:1px solid black;
+            color:white;
+            background-color: green; 
+        }
+        tr:nth-child(even){
+            background-color:#bfa;
+            line-height:30px;
+        }
+        tr:nth-child(odd){
+            background-color:rgb(212, 228, 195);
+            line-height:30px;
+        }
+        td{
+            border:1px solid black;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>畅销活动排行榜</caption>
+        <tr>
+            <th>活动编号</th>
+            <th>活动名称</th>
+            <th>会员价</th>
+            <th>参加人数</th>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>田园风光</td>
+            <td>3800</td>
+            <td>800</td>
+        </tr>
+        <tr>
+            <td>002</td>
+            <td>海天一色</td>
+            <td>3600</td>
+            <td>700</td>
+        </tr>
+        <tr>
+            <td>003</td>
+            <td>北欧风情</td>
+            <td>3300</td>
+            <td>600</td>
+        </tr>
+        <tr>
+            <td>004</td>
+            <td>南极风采</td>
+            <td>3100</td>
+            <td>500</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
