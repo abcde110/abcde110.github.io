@@ -1,0 +1,27 @@
+body{margin: 40px 0 0 0;
+    padding: 0;
+    font-size: 12px;
+}
+dl{width: 830px;
+    height: 420px;
+    margin: 0 auto;
+    padding: 8px 0 0 8px;
+    border: 1px solid #ccc;
+    border-top-style: dotted;
+    list-style: none
+}
+dl dt{ float: left;
+    margin: 0 8px 8px 0;
+}
+dl dd{ float: left;
+     margin: 0 100px 0px 23px;
+}
+dl dt a img {width: 190px;
+    height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 1px -1px 1px 1px #b6ebf7;
+}
+dl dt a:hover img{
+    border-color: #f33
+};
