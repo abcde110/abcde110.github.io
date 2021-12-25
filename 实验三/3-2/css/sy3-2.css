@@ -1,0 +1,15 @@
+body{
+    background-color: #f3f1e9;
+}
+div img{
+float: right;
+margin:60px 20px 10px 0;
+}
+p{
+    text-indent: 2em;
+    margin: 20px 20px;
+    line-height: 1.5em;
+}
+div{
+    padding: 16px 100px 0 20px;
+}

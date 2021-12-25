@@ -1,0 +1,25 @@
+.big{
+    background-color:purple;
+    color:#ffffff;
+    text-align:center;
+    margin: 0px;
+}
+.small1{
+    width:300px;
+    background-color: purple;
+    color: rgb(255, 255, 255);
+    text-align:center;
+    font-size: 1em;   
+    background-size: cover;
+    margin: 0px;
+    border: 1px solid;
+    padding: 20px;
+}
+.small2{
+    background-color: purple;
+    color: rgb(255, 255, 255);
+    text-align:center;
+    font-size: 1em;   
+    background-size: cover;
+    margin: 0px;
+}

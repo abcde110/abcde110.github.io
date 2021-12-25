@@ -1,0 +1,13 @@
+header h2{
+    text-align: center;
+    color: red;
+}
+article h3{
+    text-align: left;
+    color: green;
+}
+p{
+    color: black;
+    text-indent: 2em;
+    line-height: 1.5em;
+}

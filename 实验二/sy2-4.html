@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin:0px;
+        padding:0px;
+    }
+    table{
+        margin:50px auto;
+        background-color:#008c8c;
+        border: 1;
+        border-style:solid;
+        border-color: black;
+    }
+</style>
+<body>
+    <table>
+        <caption>用户注册</caption>
+        <tr>
+            <td>用户名</td>
+            <td>
+                <input type="text" name="user" checked>
+            </td>
+        </tr>
+        <tr>
+            <td>密码</td>
+            <td>
+                <input type="password" name="password">
+            </td>
+        </tr>
+        <tr>
+            <td>确认密码</td>
+            <td>
+                <input type="password" name = "insure">
+            </td>
+        </tr>
+        <tr>
+            <td>性别</td>
+            <td>
+                <input type="radio" name="sex" value = "男">男
+                <input type="radio" name="sex" value = "女">女
+            </td>
+        </tr>
+        
+        <tr>
+            <td>出生日期</td>
+            <td>
+                <input type="date" name = "borndate">
+            </td>
+        </tr>
+        <tr>
+            <td>联系电话</td>
+            <td>
+                <input type="number" name = "tel">
+            </td>
+        </tr>
+        <tr>
+            <td>电子邮件</td>
+            <td>
+                <input type="email" name = "mail">
+            </td>
+        </tr>
+        <tr>
+            <td>最高学历</td>
+            <td>
+                <input type="radio" name="grade" value = "中专">中专
+                <input type="radio" name="grade" value = "大专">大专
+                <input type="radio" name = "grade" value = "大学">大学
+            </td>
+            <tr>
+                <td>职业</td>
+                <td>
+                    <select name="work">
+                        <option value="--选择职业--">--选择职业--</option>
+                        <option value="教师">教师</option>
+                        <option value="医生">医生</option>
+                        <option value="警察">警察</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>爱好</td>
+                <td>
+                    <input type="checkbox" name="hobit">上网
+                    <input type="checkbox" name="hobit">篮球
+                    <input type="checkbox" name="hobit">听歌
+                    <input type="checkbox" name="hobit">下棋
+                </td>
+            </tr>
+            <tr>
+                <td>留言</td>
+                <td>
+                    <textarea name="留言" cols="20" rows="3"></textarea>
+                </td>
+            </tr>
+        </tr>
+    </table>
+</body>
+</html>

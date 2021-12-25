@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>求和平均数</title>
+    <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+    <style>
+        div{
+            width: 400px;
+            border: 2px solid;
+            border-radius: 10%;
+            margin: 100px auto;
+        }
+    </style>
+</head>
+<body>
+<div id = "app" style="margin:200px 500px">
+    <p>第一个数字 <input type = "text" v-model.number = "num1"></p>
+    <p>第二个数字 <input type = "text" v-model.number = "num2"></p>
+    <p>第三个数字 <input type = "text" v-model.number = "num3"></p>
+    <p>总和:  {{sumNum}}</p>
+    <p>平均数:  {{averageNum}}</p>
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+                num1 : null,
+                num2 : null,
+                num3 : null,
+        },
+
+        computed :{
+            sumNum: function () {
+                return this.num1 + this.num2 + this.num3;
+            },
+            averageNum: function () {
+                return this.sumNum /3;
+            }
+        }
+    })
+</script>
+</body>
+</html>

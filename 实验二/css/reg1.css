@@ -1,0 +1,183 @@
+.form{
+    width: 980px;
+    margin: 1em auto;
+}
+/* 设置了高度，文字虽然超出了范围，但是任然默认是显示的 */
+.form h2{
+    text-align: center;
+    font-size: 38px;
+    border-bottom: 1px solid #ddd;
+    height: 18px;
+    margin-bottom: 30px;
+}
+.form h2 span{
+    background: #fff;
+    padding: 0 20px;
+}
+
+/* 表单区域 */
+
+.form-area{
+    width: 423px;
+    margin: 0 auto;
+}
+
+.form-area .form-item{
+    margin: 50px 0;
+}
+
+/* 设置统一的文本框样式 */
+
+/* 设置的宽度是内容区域的宽度，border也是要占据宽度的,所以要设置box-sizing */
+input[type="text"],input[type="password"]{
+    border: 1px solid #dcdfe6;
+    width: 100%;
+    box-sizing:border-box;
+    border-radius:4px;
+    height: 40px;
+    text-indent: 1em;
+    font-size: 14px;
+    color: #606266;
+    font-family:"PingFangSC-Medium";
+}
+input[type="text"]:hover,input[type="password"]:hover{
+    border-color:#c0c4cc;
+}
+input[type="text"]::placeholder,input[type="password"]::placeholder{
+    color: #ccc;
+}
+input[type="text"]:focus,input[type="password"]:focus{
+    border-color: #00a1d6;
+}
+
+.form-area .select .select-item,.form-area .select .input{
+    float: left;
+    height: 40px;
+} 
+.form-area .select .select-item{
+    width: 140px;
+    border: 1px solid #dcdfe6;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: none;/* 两个边框重叠导致边框加粗 ，去掉右边框*/
+    position: relative;
+}
+.form-area .select .input{
+    width:283px;
+}
+.form-area .select .input input{
+    border-radius: 0 4px 4px 0;
+}
+/* 两个边框重叠导致边框加粗 */
+/* 浮动刚刚设置完，下一个元素就跑到了上面来，因为高度坍塌了 */
+
+.clearfix::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+.form-area .select .select-item .title{
+    height: 40px;
+    line-height: 40px;
+    padding:0 0 0 20px;
+    color: #909399;
+    position: relative;
+}
+.form-area .select .select-item .title .choose-items ul{
+    /* 最大高度256像素，不足以内容高度为主，超过则最多只能256像素 */
+    max-height: 256px;
+    /* 默认情况下，是溢出显示的,溢出的话没有办法遮挡后面的元素.所以设置绝对定位和z-index*/
+    background: #fff;
+    position:absolute;
+    z-index: 1;
+    /* 要设置相对父元素的位置，要在父元素里设置定位元素 */
+    left:0;
+    top:50px;
+    width: 100%;
+    box-sizing: border-box;
+    border:1px solid #dcdfe6;
+    border-radius: 4px;
+    color: #606266;
+    padding: 10px 0;
+    /* 隐藏部分，先隐藏再伪元素显示 */
+    display: none;
+    overflow: auto;
+}
+.form-area .select .select-item .title input:checked+div ul{
+    display:block;
+}
+.form-area .select .select-item .title input{
+    width: 20%;
+    height: 38px;
+    position: absolute;
+    right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-radius: 0;
+    font-weight: 900;
+}
+/* input的placeholder具有浏览器代理的text-indent,如果设置padding改变placeholder左边到文字的距离，需要将text-indent重置 */
+.form-area .select .select-item .title input::placeholder{
+    padding-left:5pt;
+    background: #fff;
+    text-indent: 0;
+    /* text-indent: 5pt*/
+}
+
+.form-area .select .select-item .title input:focus+.choose-items ul{
+    display: block;
+}
+.form-area .form-item .duanxin{
+    width:100%;
+
+}
+.form-area .mima{
+    position: relative;   
+}
+.form-area .mima button{
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    height: 38px;
+    width: 150px;
+    background:#33b4ed;
+    font-weight: 900;
+    color: #eee;
+    font-size: 15px;
+}
+
+.form-area .mima button::placeholder{
+     
+}
+
+.form-area .zuce button{
+    width: 100%;
+    height: 40px;
+}
+.form-area .readme{
+    height: 17.758px;
+    line-height: 17.758px;
+    padding: 10px 0;
+    font-size:13.3px;
+}
+.form .readme .span a{
+    color: #00a1d6;
+}
+.form .form-area .zuce button:focus{
+    border: 1px solid #00a1d6;
+    font-size: 16px;
+    color: #1e2e3e;
+
+}
+.form .form-area .zuce button{
+    cursor: no-drop;
+}
+.form .form-area .mima{
+    margin-bottom: 0;
+}
+.form .form-area .zuce{
+    margin-top: 0;
+}

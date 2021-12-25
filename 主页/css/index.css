@@ -1,0 +1,94 @@
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* 清除ul子元素的li的浮动效果，避免出现高度坍塌问题（ul看不到内容盒里的li,高度变为0，后面的元素就上来了。视觉效果上li与后面的元素将会重叠 */
+body{
+    /* 渐变色的颜色都是在导航栏上隔一段位置选取的，为的是避免导航栏和背景太违和 */
+    /* background: linear-gradient(-45deg, #89f0e2,#57c08f,#245842,#192e2c,#172c21, #2B676c, #5fcbb3,#6be7c9) 0% 0% / 100% 100%; */
+    background: linear-gradient(-45deg, #192e2c,#245842,#6be7c9 ,#5fcbb3,#57c08f, #89f0e2,#2B676c,#2a5d68,#162727) 0% 0% / 100% 9000%;
+}
+/* 设置一个相对视口的导航栏区域 */
+.header{
+    background-color: #e3e4e5;
+    color: #999;
+    height:auto;
+    line-height: 40px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: url("../img/nav.jpg");
+}
+/* 导航栏 */
+.header .topnav>li{
+    float: left;
+    margin: 0 10px;
+    background:#008c8c;
+    width:100px;
+    padding:0 8px;
+    height: 40px;
+    box-sizing: border-box;
+    position: relative;
+}
+/* 鼠标悬停时导航列表样式 */
+.header .topnav>li:hover{
+    background: #fff;
+    border: 2px solid #ccc;
+    border-bottom: none;
+    line-height: 36px;
+    background: url("../img/navlist.jpg") top center;
+}
+/* 设置二级菜单样式，并设置平时隐藏二级菜单的 */
+.header .topnav>li .submenu{
+    text-align: left;
+    line-height: 1.5em;
+    width: 150px;
+    /* 不生成盒子 */
+    display: none;
+    border: 2px solid #ccc;
+    position: absolute; 
+    right: -2px;
+    background: #fff;
+    background: url("../img/nav.jpg") top center;
+}
+/* 鼠标悬停在导航栏列表某一项时出现对应的二级菜单 */
+.header .topnav>li:hover .submenu{
+    display: block;
+}
+/* 盖住鼠标悬停时导航栏和耳机菜单之间出现的线条 */
+.header .topnav>li:hover::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background:url("../img/navlist.jpg");
+    bottom: 0;
+    left: 0px;
+}
+/* 相对视口设定内容位置*/
+article{
+    position: fixed;
+    height: 50%;
+    width: 80%;
+    margin: 0 auto;
+    left: 28%;
+    top:25%;
+}
+article div{
+    left: 2%;
+}
+/* 设置p元素里文字的样式（发光文字） */
+.welcome{
+    font-size:100px;
+    color:#fff;
+    text-shadow:0 0 5px #e0ea33,
+    0 0 15px #e0ea33,
+    0 0 25px #e0ea33;
+    margin-top:200px;
+    text-align:center;
+}
+
+ /*发光文字不是我写的*/
+ /* 整个页面的body的高度是为0的，因为页面的body的子元素都是用的定位，不在文档流里 */
